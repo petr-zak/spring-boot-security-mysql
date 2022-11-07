@@ -23,10 +23,10 @@ public class DemoController {
     public String getRoot(Authentication authentication){
         User user = allServices.authenticatedUser.getUser();
         if(user.getRoles().contains(allServices.role.ADMIN)){
-            return "Logged in as \""+user.getUsername()+"\". You can got to <a href=\"/user\">/user</a>, got to <a href=\"/all\">/all</a> or <a href=\"/logout\">logout</a>.";
+            return "Logged in as \""+user.getUsername()+"\". You can go to <a href=\"/user\">/user</a>, got to <a href=\"/all\">/all</a> or <a href=\"/logout\">logout</a>.";
         }
         if(user.getRoles().contains(allServices.role.USER)){
-            return "Logged in as \""+user.getUsername()+"\". You can got to <a href=\"/user\">/user</a> or <a href=\"/logout\">logout</a>. This will fail: <a href=\"/all\">/all</a> ";
+            return "Logged in as \""+user.getUsername()+"\". You can go to <a href=\"/user\">/user</a> or <a href=\"/logout\">logout</a>. This will fail: <a href=\"/all\">/all</a> ";
         }
         return "You are not logged in. Please <a href=\"/login\">login</a> first.";
     }
