@@ -15,3 +15,7 @@ mvn clean package
 java -jar ./target/demo-0.0.1-SNAPSHOT.jar
 ```
 Open browser and navigate to: http://localhost:8080/
+## Available users
+Login with username / password : 
+- **user** / **user** to have **USER** role.
+- **admin** / **admin** to have **ADMIN** role.
