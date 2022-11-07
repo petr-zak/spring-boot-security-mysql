@@ -6,6 +6,11 @@ Demo with Spring Boot, Spring Security and MySQL.
 ```
 spring.datasource.url=jdbc:mysql://localhost:3306/demo?useUnicode=yes&characterEncoding=UTF-8
 ```
+- Change default username / password for the database in [./src/main/resources/application.properties](./src/main/resources/application.properties)
+```
+spring.datasource.username=demo
+spring.datasource.password=demo
+```
 ## Compile
 ```
 mvn clean package
